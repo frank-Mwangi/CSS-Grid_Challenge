@@ -34,11 +34,12 @@ body {
 }
 .navbar {
   width: 80vw;
-  height: 70px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .navbar > .menu {
   border: 2px solid blue;
@@ -54,16 +55,111 @@ body {
   grid-template-rows: 3 1fr;
   height: 500px;
   width: 80vw;
-  grid-template-areas: "i i b";
+  grid-template-areas:
+    "i i b"
+    "h h b"
+    "a a a";
 }
 .large-img > img {
-  width: 600px;
+  width: 52vw;
   height: 200px;
   grid-area: i;
 }
 .black {
-  width: 200px;
-  height: 500px;
+  margin-right: 0;
+  width: 25.2vw;
+  position: relative;
+  right: -10px;
+  height: 346px;
   background-color: black;
   grid-area: b;
+  display: flex;
+  flex-direction: column;
+}
+.black > .new {
+  display: flex;
+  justify-content: center;
+  color: orange;
+  height: 46px;
+  h1 {
+    font-size: 9;
+  }
+}
+.new > .text {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 2px solid yellow; */
+  width: 18vw;
+}
+.card {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.card > .text {
+  width: 18vw;
+  height: 80px;
+  border-bottom: 1px solid white;
+}
+.card > .text > h3 {
+  font-size: 9;
+}
+.card h3 {
+  /* border: 2px solid green; */
+  font-size: 16px;
+}
+.card > p {
+  font-size: 3px;
+}
+.card > h3 {
+  font-size: 9;
+}
+.headline {
+  display: flex;
+  flex-direction: row;
+  grid-area: h;
+  border: 2px dotted green;
+  position: relative;
+  margin-top: 10px;
+  height: 100px;
+  width: 52vw;
+}
+.caption {
+  font-weight: 900;
+  font-size: 10px;
+}
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.button {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+.blogs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: a;
+  height: 100px;
+}
+.blogs img {
+  height: 100px;
+  width: 100px;
+}
+.blog {
+  border: 2px solid aquamarine;
+  display: flex;
+  flex-direction: row;
+  width: 25vw;
 }
