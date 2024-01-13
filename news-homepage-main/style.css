@@ -79,11 +79,9 @@ body {
 .black > .new {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: orange;
   height: 46px;
-  h1 {
-    font-size: 9;
-  }
 }
 .new > .text {
   display: flex;
@@ -103,6 +101,9 @@ body {
   height: 80px;
   border-bottom: 1px solid white;
 }
+.black .VC {
+  border-bottom: none;
+}
 .card > .text > h3 {
   font-size: 9;
 }
@@ -119,21 +120,31 @@ body {
 .headline {
   display: flex;
   flex-direction: row;
+  gap: 10px;
   grid-area: h;
-  border: 2px dotted green;
+  /* border: 2px dotted green; */
   position: relative;
-  margin-top: 10px;
-  height: 100px;
+  top: -15px;
+  height: 120px;
   width: 52vw;
 }
 .caption {
+  /* border: 2px solid gray; */
+  width: 400px;
   font-weight: 900;
-  font-size: 10px;
+  font-size: 16px;
 }
+/* .caption > .row {
+  border: 2px solid purple;
+} */
 .meta {
+  /* border: 2px solid salmon; */
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  margin-left: 30px;
+  color: gray;
+  font-weight: 500;
+  gap: 20px;
 }
 .button {
   width: 200px;
@@ -141,10 +152,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
+  background-color: hsl(5, 85%, 60%);
   color: white;
-  font-size: 10px;
-  letter-spacing: 3px;
+  font-size: 9px;
+  letter-spacing: 5px;
 }
 .blogs {
   display: flex;
