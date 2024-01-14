@@ -7,7 +7,7 @@
   padding: 0;
 }
 body {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   background-color: black;
   width: 100vw;
   display: flex;
@@ -26,7 +26,7 @@ body {
 .content {
   width: 80vw;
   height: 80vh;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -42,7 +42,7 @@ body {
   margin-bottom: 10px;
 }
 .navbar > .menu {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 40vw;
   display: flex;
   justify-content: space-between;
@@ -51,8 +51,8 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 3 1fr;
-  grid-template-rows: 3 1fr;
+  grid-template-columns: 3, 1fr;
+  grid-template-rows: 3, 1fr;
   height: 500px;
   width: 80vw;
   grid-template-areas:
@@ -69,7 +69,7 @@ body {
   margin-right: 0;
   width: 25.2vw;
   position: relative;
-  right: -10px;
+  right: -12px;
   height: 346px;
   background-color: black;
   grid-area: b;
@@ -87,7 +87,7 @@ body {
   display: flex;
   justify-content: flex-start;
   /* border: 2px solid yellow; */
-  width: 18vw;
+  width: 22vw;
 }
 .card {
   height: 100px;
@@ -97,11 +97,18 @@ body {
   color: white;
 }
 .card > .text {
-  width: 18vw;
+  width: 22vw;
   height: 80px;
-  border-bottom: 1px solid white;
+  border-bottom: 0.5px solid gray;
 }
-.black .VC {
+.card > .text > p {
+  /* border: 2px solid brown; */
+  font-size: 15px;
+  margin-top: 10px;
+  color: hsl(233, 8%, 79%);
+  font-weight: 500;
+}
+.black .VC > .text {
   border-bottom: none;
 }
 .card > .text > h3 {
@@ -111,9 +118,7 @@ body {
   /* border: 2px solid green; */
   font-size: 16px;
 }
-.card > p {
-  font-size: 3px;
-}
+
 .card > h3 {
   font-size: 9;
 }
@@ -169,8 +174,28 @@ body {
   width: 100px;
 }
 .blog {
-  border: 2px solid aquamarine;
+  height: 100px;
+  /* border: 2px solid aquamarine; */
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
   width: 25vw;
+}
+.blog > .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog h2 {
+  color: hsl(233, 8%, 79%);
+}
+
+.blog h6 {
+  font-size: 16px;
+  font-weight: 800;
+}
+.blog p {
+  font-size: 15px;
 }
